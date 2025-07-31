@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gestor de Tickets</title>
+  </head>
+  <body>
+    <h1>Gestor de Tickets</h1>
+
+    <!-- BOTONES DE ACCIONES -->
+    <div>
+      <button id="btnCrear">Crear Ticket</button>
+      <button id="btnVerTodos">Ver Todos los Tickets</button>
+      <button id="btnFiltrar">Filtrar por Estado</button>
+    </div>
+
+    <!-- FORMULARIO PARA CREAR EL TICKET -->
+    <div id="formularioCrear">
+      <h3>Crear Nuevo Ticket</h3>
+      <form id="ticketForm">
+        <p>
+          <label>Nombre del Cliente:</label><br />
+          <input type="text" id="cliente" required />
+        </p>
+        <p>
+          <label>Descripción del Problema:</label><br />
+          <textarea id="problema" required></textarea>
+        </p>
+        <button type="submit">Crear Ticket</button>
+      </form>
+    </div>
+
+    <!-- SECCION PARA FILTRAR -->
+    <div id="seccionFiltro">
+      <h3>Filtrar Tickets</h3>
+      <p>
+        <label>Estado:</label><br />
+        <select id="filtroEstado">
+          <option value="abierto">Abiertos</option>
+          <option value="cerrado">Cerrados</option>
+        </select>
+        <button id="btnAplicarFiltro">Aplicar Filtro</button>
+      </p>
+    </div>
+
+    <!-- LISTA DE TICKETS -->
+    <div id="listaTickets">
+      <!-- -->
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
