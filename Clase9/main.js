@@ -1,11 +1,8 @@
-
-
- /* 
+/* 
   getElementbyId: busca un elemento en la pagina web por su id y lo devuelve
   getElementByClassName: busca un elemento por su clase y lo devuelve
   getElementByTagName: busca todos los elementos que tengan ese tag y devuelve una LISTA
  */
-
 
 //forma de llamar
 
@@ -15,10 +12,6 @@ titulo.innerHTML= `Bienvenidos a la clase del pela`
 
 console.log(titulo)
  */
-
-
-
-
 
 /* let pochoclo = document.getElementById("padre")
 
@@ -35,18 +28,9 @@ for (const i of productos){
 } */
 
 
-
-
-
-
-let titulo = document.getElementById("titulo")
-
-
+//let titulo = document.getElementById("titulo")
 
 //ELEMENTO.ADDEVENTLISTENER(EVENTO,FUNCION)
-
-
-
 
 
 /* function saludar(){
@@ -55,5 +39,34 @@ let titulo = document.getElementById("titulo")
 }
  */
 
-titulo.addEventListener("click", ()=>console.log("hola desde un evento"))
+//titulo.addEventListener("click", ()=>console.log("hola desde un evento"))
 
+/* 
+let boton = document.getElementById("boton")
+
+
+boton.addEventListener("click", ()=>alert("hola don pepito"))
+ */
+/* 
+
+let puntero = document.getElementById("jose")
+let titulo = document.getElementById("titulo")
+
+puntero.addEventListener("mousemove", function(event){
+    console.log("posicion mira: " + event.clientX + " sobre " + event.clientY)
+})
+
+
+puntero.addEventListener("click", ()=> console.log("tatatatatatatatatatata"))
+puntero.addEventListener("mouseover", ()=> console.log("cargando"))
+
+
+ */
+
+
+
+let inputField = document.getElementById("miCampoDeTexto")
+
+inputField.addEventListener("change", function(event){
+    console.log("valor del campo de texto cambiado: " + event.target.value)
+})
