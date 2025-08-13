@@ -90,14 +90,11 @@ async function mostrarPerfil(){
         mostrarMensaje(`edad: ${perfil.edad}`)
         mostrarMensaje(`deporte : ${perfil.deporteFavorito}`)
         mostrarMensaje(`nivel: ${perfil.nivel}`)
-
     }catch(error){
         mostrarMensaje(error)
     }
 }
-
 //------------------------------------------------------------------------
-
 
 function mostrarMensaje(texto){
 const div = document.getElementById("ouput")
