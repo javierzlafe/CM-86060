@@ -45,7 +45,7 @@ fetch(URL) //realizar una solicitud http para consumir los pokemon
 
 
 
-
+/* 
 fetch("productos.json")
 .then(response=>response.json())
 .then( data=>{
@@ -61,3 +61,7 @@ fetch("productos.json")
 }).catch(error=>{
     console.error("ha ocurrido un error")
 })
+ */
+
+ 
+
